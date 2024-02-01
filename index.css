@@ -3,7 +3,7 @@
 */
 
 :root{
-    --primary-colo: var(--primary-colo);
+    --primary-color: #2c2c2c;
     --secondary-color: #5655da;
 }
 
@@ -14,7 +14,9 @@
 }
 
 p {
-    color: var(--primary-colo);
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--primary-color);
 }
 
 button{
