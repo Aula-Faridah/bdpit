@@ -46,8 +46,8 @@ button {
     // @extend %p;
     color: #fff;
     // font-size: 15px;
-    font-size: math.div($number1,
-    $number2)*1px;
+    // font-size: math.div($number1,
+    // $number2)*1px;
   }
 }
 
