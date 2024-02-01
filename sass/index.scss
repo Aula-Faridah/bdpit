@@ -1,0 +1,53 @@
+@use "sass.math";
+@use "aboutme";
+@use "contact";
+
+$primary-color: #2c2c2c;
+$secondary-color: #5655da;
+
+$number1 : 10px;
+$number2 : 5px;
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+%p {
+  font-size: 14px;
+  font-weight: 300;
+  // color: $primary-color;
+  color: aboutme.$secondary-color;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.profile {
+  display: flex;
+  flex: 7;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  img {
+    border-radius: 50%;
+    width: 165px;
+    height: 165px;
+  }
+  .job {
+    // @extend %p;
+    color: #fff;
+    // font-size: 15px;
+    font-size: math.div($number1,
+    $number2)*1px;
+  }
+}
+

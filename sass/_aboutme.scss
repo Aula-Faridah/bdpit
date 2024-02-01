@@ -1,0 +1,62 @@
+$secondary-color: #5655db;
+
+#about-me {
+    .title {
+      position: relative;
+      color: #f74470;
+      button {
+        display: flex;
+        background-color: var(--secondary-color);
+        color: #fff;
+        padding: 5px 10px;
+        position: absolute;
+        top: -5px;
+        right: 6px;
+        border-radius: 5%;
+        gap: 5px;
+      }
+    }
+    .skills {
+        .skill-detail {
+          display: grid;
+          grid-template-columns: 80% 20%;
+          grid-template-areas:
+            "name percent"
+            "pbar pbar";
+          .name {
+            grid-area: name;
+          }
+          .percent {
+            text-align: right;
+            grid-area: percent;
+          }
+          .graph {
+            border-radius: 10px;
+            grid-area: pbar;
+            background-color: #9e9e9e;
+            height: 20px;
+            .progress {
+              background-color: #f74470;
+              height: 100%;
+              border-radius: 10px 0px 0px 10px;
+            }
+            .w90 {
+              width: 90%;
+            }
+      
+            .w80 {
+              width: 80%;
+            }
+      
+            .w45 {
+              width: 45%;
+            }
+      
+            .w60 {
+              width: 60%;
+            }
+          }
+        }
+      }
+      
+  }

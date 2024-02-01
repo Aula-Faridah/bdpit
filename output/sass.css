@@ -1,0 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*# sourceMappingURL=sass.css.map */

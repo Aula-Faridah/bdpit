@@ -1,0 +1,25 @@
+@mixin textinput($border : 2px solid black) {
+  padding: 20px;
+  border: none;
+  border-bottom: $border;
+}
+@mixin focusinput($focuscolor : rgba(0, 0, 0,0.3)){
+    outline: none;
+    border-bottom-color: $focuscolor;
+} 
+    
+#contact {
+  .input-form {
+    input {
+      @include textinput();
+      :focus {
+        @include focusinput(); //style ini hanya aktif ketika fokus
+      }
+    }
+    textarea {
+      @include textinput();
+      grid-area: message;
+      resize: none;
+    }
+  }
+}
